@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+  <h1>imagem dinâmica</h1>  
+    <p>tente abrir esses sites em varios dispositivos diferentes ou simpesmente aumente e diminua o tamanhp do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagen-pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagen-media.png" type="image/png">
+         <img src="imagens/imagen-grade.png" alt="imagen flexível">
+    </picture>
+    <h1>Reproduzindo audios</h1>
+    <p>vamos aprender a como reproduzir audios em HTML5</p>
+    <audio src="midia/Sigma-Slide-The-Soundlings.mp3" autoplay ></audio>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Sigma-Slide-The-Soundlings.mp3" type="audio/mpeg">
+        <source src="midia/Sigma-Slide-The-Soundlings.ogg" type="ausio/ogg">
+        <source src="midia/Sigma-Slide-The-Soundlings.wav" type="audio/wav">
+        <p>infelismente seu navegador se mostrou inconptivel com o formato do arquivo.<a href="midia/Sigma-Slide-The-Soundlings.mp3"> Baixe o arquivo aqui</a></p>
+    </audio>
+    
+</body>
+</html>
